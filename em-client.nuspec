@@ -17,11 +17,11 @@
     <docsUrl></docsUrl>
     <mailingListUrl></mailingListUrl>
     <bugTrackerUrl></bugTrackerUrl>-->
-    <tags>em-client emclient email calendar tasks contacts outlook exchange</tags>
+    <tags>em-client emclient email calendar tasks contacts outlook exchange admin</tags>
     <copyright>eM Client Inc.</copyright>
     <licenseUrl>http://www.emclient.com/pro-vs-free</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <iconUrl>http://cdn.rawgit.com/timothek/chocolatey-emclient/master/icons/emclient.png</iconUrl>
-    <releaseNotes></releaseNotes>
+    <releaseNotes>http://www.emclient.com/release-history</releaseNotes>
   </metadata>
 </package>
