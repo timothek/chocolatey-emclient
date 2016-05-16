@@ -9,14 +9,19 @@
     <authors>timothek</authors>
     <owners>eM Client Inc.</owners>
     <summary>_eM Client is a full featured email client with a modern and easy to use interface. eM Client also offers calendar, tasks, contacts and even chat.</summary>
-    <description>eM Client is a full featured email client with a modern and easy to use interface. eM Client also offers calendar, tasks, contacts and even chat.
+    <description>
+	eM Client is a full featured email client with a modern and easy to use interface. eM Client also offers calendar, tasks, contacts and even chat.
+	
+	Synchronize your e-mails (IMAP/POP3) or even Calendars and Contacts with various servers and services.
+	
+	eM Client supports import from various email clients like MS Outlook, Outlook Express or Thunderbird.
     </description>
     <projectUrl>http://www.emclient.com/</projectUrl>
     <packageSourceUrl>https://github.com/timothek/chocolatey-emclient/</packageSourceUrl>
-    <!-- <projectSourceUrl></projectSourceUrl>
-    <docsUrl></docsUrl>
-    <mailingListUrl></mailingListUrl>
-    <bugTrackerUrl></bugTrackerUrl>-->
+    <docsUrl>http://www.emclient.com/tools/documentation.pdf</docsUrl>
+    <mailingListUrl>https://forum.emclient.com/emclient</mailingListUrl>
+	<!--<projectSourceUrl></projectSourceUrl>
+     <bugTrackerUrl></bugTrackerUrl>-->
     <tags>em-client emclient email calendar tasks contacts outlook exchange admin</tags>
     <copyright>eM Client Inc.</copyright>
     <licenseUrl>http://www.emclient.com/pro-vs-free</licenseUrl>
