@@ -1,17 +1,10 @@
-﻿$packageName= 'em-client' # arbitrary name for the package, used in messages
-$toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url        = 'http://de.emclient.com/dist/latest/setup.msi' # download url
+﻿
+$packageName	= 'em-client'
+$fileType		= 'MSI'
+$32BitUrl		= 'http://de.emclient.com/dist/latest/setup.msi'
+$64BitUrl		= $32BitUrl
+$silentArgs		= "/qn /norestart /"
+$validExitCodes	= @(0, 3010, 1641)
 
-
-$packageArgs = @{
-  packageName   = $packageName
-  fileType      = 'MSI'
-  url           = $url
-
-  silentArgs    = "/qn /norestart /l*v `"$env:TEMP\chocolatey\$($packageName)\$($packageName).MsiInstall.log`""
-  validExitCodes= @(0, 3010, 1641)
-
-  softwareName  = 'em client*'
-}
-
-Install-ChocolateyPackage @packageArgs
+# install eM Client
+Install-ChocolateyPackage "$packageName" "$fileType" "$silentArgs" "$32BitUrl" "$64BitUrl" -validExitCodes $validExitCodes
