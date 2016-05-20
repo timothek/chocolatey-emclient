@@ -6,7 +6,7 @@
     <title>em-client (Install)</title>
     <version>6.0</version>
     <authors>eM Client Inc.</authors>
-    <!-- <owners></owners> -->
+    <owners>timothek</owners>
     <summary>_eM Client is a full featured email client with a modern and easy to use interface. eM Client also offers calendar, tasks, contacts and even chat.</summary>
     <description>
 	eM Client is a full featured email client with a modern and easy to use interface. eM Client also offers calendar, tasks, contacts and even chat.
