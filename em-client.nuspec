@@ -4,16 +4,16 @@
   <metadata>
     <id>em-client</id>
     <title>em-client (Install)</title>
-    <version>6.0</version>
+    <version>7.0</version>
     <authors>eM Client Inc.</authors>
     <owners>timothek</owners>
-    <summary>_eM Client is a full featured email client with a modern and easy to use interface. eM Client also offers calendar, tasks, contacts and even chat.</summary>
+    <summary>eM Client is a full featured e-mail client with a modern and easy to use interface. eM Client also offers calendar, tasks, contacts and chat.</summary>
     <description>
-	eM Client is a full featured email client with a modern and easy to use interface. eM Client also offers calendar, tasks, contacts and even chat.
+	eM Client is a full featured e-mail client with a modern and easy to use interface. eM Client also offers calendar, tasks, contacts and chat. eM Client has been fully optimized to run smoothly on Windows XP, Vista, 7, 8 and 10.
 	
-	Synchronize your e-mails (IMAP/POP3) or even Calendars and Contacts with various servers and services.
+	Synchronize your e-mails (IMAP/POP3) or even Calendars and Contacts with various servers and services. eM Client fully supports touch devices like touch-enabled laptops, tablets and hybrid devices. Use your email client easily in a modern way. Find any email, contact or attachment in seconds with eM Client's super-fast search.
 	
-	eM Client supports import from various email clients like MS Outlook, Outlook Express or Thunderbird.
+	You can easily import your data from most of the other e-mail clients. This includes Microsoft Outlook, Outlook Express, Windows Mail, Windows Live Mail, Thunderbird, The Bat and more.
     </description>
     <projectUrl>http://www.emclient.com/</projectUrl>
     <packageSourceUrl>https://github.com/timothek/chocolatey-emclient/</packageSourceUrl>
@@ -21,11 +21,14 @@
     <mailingListUrl>https://forum.emclient.com/emclient</mailingListUrl>
 	<!--<projectSourceUrl></projectSourceUrl>
      <bugTrackerUrl></bugTrackerUrl>-->
-    <tags>em-client emclient email calendar tasks contacts outlook exchange admin</tags>
+    <tags>em-client emclient em client mail email calendar tasks contacts outlook exchange admin</tags>
     <copyright>eM Client Inc.</copyright>
     <licenseUrl>http://www.emclient.com/pro-vs-free</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <iconUrl>http://cdn.rawgit.com/timothek/chocolatey-emclient/master/icons/emclient.png</iconUrl>
-    <releaseNotes>http://www.emclient.com/release-history</releaseNotes>
+    <releaseNotes>
+		The package always installs the latest version.
+		http://www.emclient.com/release-history
+	</releaseNotes>
   </metadata>
 </package>
