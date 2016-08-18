@@ -4,7 +4,7 @@
   <metadata>
     <id>em-client</id>
     <title>em-client (Install)</title>
-    <version>7.0</version>
+    <version>7.0.26687</version>
     <authors>eM Client Inc.</authors>
     <owners>timothek</owners>
     <summary>eM Client is a full featured e-mail client with a modern and easy to use interface. eM Client also offers calendar, tasks, contacts and chat.</summary>
@@ -27,8 +27,7 @@
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <iconUrl>http://cdn.rawgit.com/timothek/chocolatey-emclient/master/icons/emclient.png</iconUrl>
     <releaseNotes>
-		The package always installs the latest version.
-		http://www.emclient.com/release-history
+		Packaged the latest release of Version 7 and added the checksum.
 	</releaseNotes>
   </metadata>
 </package>
