@@ -27,7 +27,7 @@
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <iconUrl>http://cdn.rawgit.com/timothek/chocolatey-emclient/master/icons/emclient.png</iconUrl>
     <releaseNotes>
-		Packaged the latest release of Version 7 and added the checksum.
+		http://www.emclient.com/release-history
 	</releaseNotes>
   </metadata>
 </package>
