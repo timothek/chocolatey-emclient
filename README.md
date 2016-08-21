@@ -12,3 +12,7 @@ To install em-client, run the following command from the command line or from Po
 ```
 choco install em-client
 ```
+
+**What does update.ps1 do?**
+
+update.ps1 is a PowerShell script to automaticly update em-client.nuspec and chocolateyinstall.ps1, if a new version of eM Client is published. Please refer to the Automatic Chocolatey Package Update Module documentation (https://github.com/majkinetor/au/blob/master/README.md).
