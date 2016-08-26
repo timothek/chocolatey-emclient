@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>em-client</id>
-    <title>em-client (Install)</title>
+    <title>eM Client (Install)</title>
     <version>7.0.26687</version>
     <authors>eM Client Inc.</authors>
     <owners>timothek</owners>
