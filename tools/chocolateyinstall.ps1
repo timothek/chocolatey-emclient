@@ -1,9 +1,9 @@
 ﻿$packageName	= 'em-client'
 $fileType		= 'MSI'
-$url			= 'https://www.emclient.com/dist/v7.2.35595/setup.msi'
+$url			= 'https://www.emclient.com/dist/v7.2.36694/setup.msi'
 $silentArgs		= "/qn /norestart"
 $validExitCodes	= @(0, 3010, 1641)
-$checksum  		= 'a120100e7ba9c62f65f5ebce53d2d5777d583a68a9592ee72591feb46e97046a'
+$checksum  		= '0e8f73375c15503740251ba59cdf4ee51e26435a7d98ae4253d73f909703fdb3'
 
 $packageArgs = @{
   packageName           = $packageName

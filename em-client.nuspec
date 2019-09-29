@@ -4,26 +4,15 @@
   <metadata>
     <id>em-client</id>
     <title>eM Client (Install)</title>
-    <version>7.2.35595</version>
+    <version>7.2.36694</version>
     <authors>eM Client Inc.</authors>
     <owners>timothek</owners>
     <summary>eM Client is a full featured e-mail client with a modern and easy to use interface. eM Client also offers calendar, tasks, contacts and chat.</summary>
-    <description><![CDATA[A chocolatey package for eM Client.
-
-**What is chocolatey?**
-
-Chocolatey NuGet is a Machine Package Manager, somewhat like apt-get, but built with Windows in mind. Visit [chocolatey.org](https://chocolatey.org/) for more information.
-
-**How to install eM Client through chocolatey?**
-
-To install em-client, run the following command from the command line or from PowerShell:
-```
-choco install em-client
-```
-
-**What does update.ps1 do?**
-
-update.ps1 is a PowerShell script to automaticly update em-client.nuspec and chocolateyinstall.ps1, if a new version of eM Client is published. Please refer to the Automatic Chocolatey Package Update Module documentation (https://github.com/majkinetor/au/blob/master/README.md).
+    <description><![CDATA[eM Client is a full featured e-mail client with a modern and easy to use interface. eM Client also offers calendar, tasks, contacts and chat. eM Client has been fully optimized to run smoothly on Windows XP, Vista, 7, 8 and 10.
+	
+Synchronize your e-mails (IMAP/POP3) or even Calendars and Contacts with various servers and services. eM Client fully supports touch devices like touch-enabled laptops, tablets and hybrid devices. Use your email client easily in a modern way. Find any email, contact or attachment in seconds with eM Client's super-fast search.
+	
+You can easily import your data from most of the other e-mail clients. This includes Microsoft Outlook, Outlook Express, Windows Mail, Windows Live Mail, Thunderbird, The Bat and more.
 ]]></description>
     <projectUrl>http://www.emclient.com/</projectUrl>
     <packageSourceUrl>https://github.com/timothek/chocolatey-emclient/</packageSourceUrl>
