@@ -4,7 +4,7 @@
   <metadata>
     <id>em-client</id>
     <title>eM Client (Install)</title>
-    <version>7.2.36694</version>
+    <version>7.2.38682</version>
     <authors>eM Client Inc.</authors>
     <owners>timothek</owners>
     <summary>eM Client is a full featured e-mail client with a modern and easy to use interface. eM Client also offers calendar, tasks, contacts and chat.</summary>
@@ -25,8 +25,9 @@ You can easily import your data from most of the other e-mail clients. This incl
     <licenseUrl>http://www.emclient.com/pro-vs-free</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <iconUrl>http://cdn.rawgit.com/timothek/chocolatey-emclient/master/icons/emclient.png</iconUrl>
-    <releaseNotes>
-		http://www.emclient.com/release-history
-	</releaseNotes>
+    <releaseNotes>http://www.emclient.com/release-history</releaseNotes>
+    <dependencies>
+      <dependency id="kb2999226" version="1.0.20181019" />
+    </dependencies>
   </metadata>
 </package>
