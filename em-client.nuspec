@@ -21,12 +21,12 @@ You can easily import your data from most of the other e-mail clients. This incl
     <projectUrl>http://www.emclient.com/</projectUrl>
     <packageSourceUrl>https://github.com/timothek/chocolatey-emclient/</packageSourceUrl>
     <docsUrl>http://www.emclient.com/tools/documentation.pdf</docsUrl>
-    <mailingListUrl>https://forum.emclient.com/emclient</mailingListUrl>
+    <mailingListUrl>https://forum.emclient.com/</mailingListUrl>
 	<!--<projectSourceUrl></projectSourceUrl>
      <bugTrackerUrl></bugTrackerUrl>-->
     <tags>em-client emclient em client mail email calendar tasks contacts outlook exchange admin</tags>
     <copyright>eM Client Inc.</copyright>
-    <licenseUrl>http://www.emclient.com/pro-vs-free</licenseUrl>
+    <licenseUrl>https://www.emclient.com/pricing</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <iconUrl>http://cdn.rawgit.com/timothek/chocolatey-emclient/master/icons/emclient.png</iconUrl>
     <releaseNotes>http://www.emclient.com/release-history</releaseNotes>
