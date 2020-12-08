@@ -4,7 +4,7 @@
   <metadata>
     <id>em-client</id>
     <title>eM Client (Install)</title>
-    <version>8.0.2951</version>
+    <version>8.1.876</version>
     <authors>eM Client Inc.</authors>
     <owners>timothek</owners>
     <summary>eM Client is a full featured e-mail client with a modern and easy to use interface. eM Client also offers calendar, tasks, contacts and chat.</summary>
@@ -21,7 +21,7 @@ You can easily import your data from most of the other e-mail clients. This incl
     <projectUrl>http://www.emclient.com/</projectUrl>
     <packageSourceUrl>https://github.com/timothek/chocolatey-emclient/</packageSourceUrl>
     <docsUrl>http://www.emclient.com/tools/documentation.pdf</docsUrl>
-    <mailingListUrl>https://forum.emclient.com/</mailingListUrl>
+    <mailingListUrl>https://forum.emclient.com</mailingListUrl>
 	<!--<projectSourceUrl></projectSourceUrl>
      <bugTrackerUrl></bugTrackerUrl>-->
     <tags>em-client emclient em client mail email calendar tasks contacts outlook exchange admin</tags>
