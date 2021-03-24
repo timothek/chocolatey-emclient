@@ -4,7 +4,7 @@
   <metadata>
     <id>em-client</id>
     <title>eM Client (Install)</title>
-    <version>8.1.876</version>
+    <version>8.2.1193</version>
     <authors>eM Client Inc.</authors>
     <owners>timothek</owners>
     <summary>eM Client is a full featured e-mail client with a modern and easy to use interface. eM Client also offers calendar, tasks, contacts and chat.</summary>
@@ -18,9 +18,9 @@ Synchronize your e-mails (IMAP/POP3) or even Calendars and Contacts with various
 	
 You can easily import your data from most of the other e-mail clients. This includes Microsoft Outlook, Outlook Express, Windows Mail, Windows Live Mail, Thunderbird, The Bat and more.
 ]]></description>
-    <projectUrl>http://www.emclient.com/</projectUrl>
+    <projectUrl>https://www.emclient.com/</projectUrl>
     <packageSourceUrl>https://github.com/timothek/chocolatey-emclient/</packageSourceUrl>
-    <docsUrl>http://www.emclient.com/tools/documentation.pdf</docsUrl>
+    <docsUrl>https://www.emclient.com/tools/documentation.pdf</docsUrl>
     <mailingListUrl>https://forum.emclient.com</mailingListUrl>
 	<!--<projectSourceUrl></projectSourceUrl>
      <bugTrackerUrl></bugTrackerUrl>-->
@@ -28,8 +28,8 @@ You can easily import your data from most of the other e-mail clients. This incl
     <copyright>eM Client Inc.</copyright>
     <licenseUrl>https://www.emclient.com/pricing</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
-    <iconUrl>http://cdn.rawgit.com/timothek/chocolatey-emclient/master/icons/emclient.png</iconUrl>
-    <releaseNotes>http://www.emclient.com/release-history</releaseNotes>
+    <iconUrl>https://cdn.rawgit.com/timothek/chocolatey-emclient/master/icons/emclient.png</iconUrl>
+    <releaseNotes>https://www.emclient.com/release-history</releaseNotes>
     <dependencies>
       <dependency id="kb2999226" version="1.0.20181019" />
     </dependencies>
