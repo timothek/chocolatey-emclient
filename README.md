@@ -1,3 +1,6 @@
+[![update](https://github.com/timothek/chocolatey-emclient/actions/workflows/update.yml/badge.svg)](https://github.com/timothek/chocolatey-emclient/actions/workflows/update.yml)
+[![update](https://github.com/timothek/chocolatey-emclient/actions/workflows/update.yml/badge.svg)](https://github.com/timothek/chocolatey-emclient/actions/workflows/update.yml)
+
 # chocolatey-emclient
 
 A chocolatey package for eM Client. Check https://chocolatey.org for more information.
