@@ -1,5 +1,5 @@
 [![update](https://github.com/timothek/chocolatey-emclient/actions/workflows/update.yml/badge.svg)](https://github.com/timothek/chocolatey-emclient/actions/workflows/update.yml)
-[![update](https://github.com/timothek/chocolatey-emclient/actions/workflows/update.yml/badge.svg)](https://github.com/timothek/chocolatey-emclient/actions/workflows/update.yml)
+[![push](https://github.com/timothek/chocolatey-emclient/actions/workflows/push.yml/badge.svg)](https://github.com/timothek/chocolatey-emclient/actions/workflows/push.yml)
 
 # chocolatey-emclient
 
