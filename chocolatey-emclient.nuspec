@@ -2,9 +2,9 @@
 <!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
-    <id>chocolatey-emclient</id>
+    <id>em-client</id>
     <title>eM Client (Install)</title>
-    <version>8.2.1659</version>
+    <version>9.0.534</version>
     <authors>eM Client Inc.</authors>
     <owners>timothek</owners>
     <summary>eM Client is a full featured e-mail client with a modern and easy to use interface. eM Client also offers calendar, tasks, contacts and chat.</summary>
