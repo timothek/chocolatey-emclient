@@ -35,7 +35,7 @@ jobs:
         uses: mavrosxristoforos/get-xml-info@1.0
         id: getxml
         with:
-          xml-file: 'em-client.nuspec'
+          xml-file: 'chocolatey-emclient.nuspec'
           xpath: '/package/metadata/version'
 
       - name: Git commit
