@@ -17,11 +17,11 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-      - name: install automatic updater
+      - name: Install automatic updater
         run: Install-Module -Name AU -Force
         shell: pwsh
       
-      - name: run update script
+      - name: Run update script
         run: |
           ./update.ps1
         shell: pwsh

@@ -8,7 +8,10 @@ function global:au_SearchReplace {
             "(^[$]url\s*=\s*)('.*')"      = "`$1'$($Latest.URL32)'"
             "(^[$]checksum\s*=\s*)('.*')" = "`$1'$($Latest.Checksum32)'"
         }
-     }
+        'chocolatey-emclient.nuspec' = @{
+            "<id>.*</id>" = "<id>em-client</id>"
+            }
+    }
 }
 
 function global:au_GetLatest {
