@@ -31,13 +31,6 @@ jobs:
             git config --global user.name 'Update Bot'
             git config --global user.email 'noreply@kluge.io'
 
-      - name: parse version from xml
-        uses: mavrosxristoforos/get-xml-info@1.0
-        id: getxml
-        with:
-          xml-file: 'chocolatey-emclient.nuspec'
-          xpath: '//package/metadata/version'
-
       - name: Git commit
         shell: bash
-        run: if [[ `git status --porcelain` ]]; then git commit -am "Automatic Update to version ${{ steps.getxml.outputs.info }}"; git push; else echo "Keine Änderungen"; fi
+        run: if [[ `git status --porcelain` ]]; then git commit -am "Automatic Update"; git push; else echo "Keine Änderungen"; fi
