@@ -36,7 +36,7 @@ jobs:
         id: getxml
         with:
           xml-file: 'chocolatey-emclient.nuspec'
-          xpath: '/package/metadata/version'
+          xpath: '//package/metadata/version'
 
       - name: Git commit
         shell: bash
