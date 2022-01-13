@@ -34,4 +34,7 @@ You can easily import your data from most of the other e-mail clients. This incl
       <dependency id="kb2999226" version="1.0.20181019" />
     </dependencies>
   </metadata>
+  <files>
+    <file src="tools\chocolateyInstall.ps1" target="tools"/>
+  </files>
 </package>

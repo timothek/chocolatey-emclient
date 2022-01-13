@@ -1,0 +1,43 @@
+# This workflow searches for new versions in the em-client version history and updates repository
+
+name: update
+
+# this workflow runs at 02:00 UTC every day
+on:
+  schedule:
+  - cron: "0 2 * * *"
+
+  # Allows to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+jobs:
+  # This workflow contains the jobs to update and push the package
+  build:
+    # run on ubuntu-latest with powershell
+    runs-on: ubuntu-latest
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so the job can access it
+      - uses: actions/checkout@v2
+      
+      - name: run update script
+      - run: |
+          ./update.ps1
+        shell: pwsh
+
+      - name: Git config
+        run: |
+            git config --global user.name "Update Bot'
+            git config --global user.email 'noreply@kluge.io'
+
+      - name: parse version from xml
+        uses: mavrosxristoforos/get-xml-info@1.0
+        id: getxml
+        with:
+          xml-file: 'em-client.nuspec'
+          xpath: '/package/metadata/version'
+
+      - name: Git commit
+        shell: bash
+        run: if [[ `git status --porcelain` ]]; then git commit -am "Automatic Update to version ${{ steps.getxml.outputs.info }}"; git push; else echo "Keine Änderungen"; fi

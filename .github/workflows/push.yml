@@ -1,0 +1,29 @@
+# This workflow pushes the new version to chocolatey
+
+name: push
+
+# this workflow runs at every push to main
+on:
+  push:
+    branches:
+    - main
+
+jobs:
+  # This workflow contains the jobs to update and push the package
+  build:
+    # run on ubuntu-latest with powershell
+    runs-on: windows-latest
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so the job can access it
+      - uses: actions/checkout@v2
+      
+      - name: Pack
+        run: choco pack
+        
+      - name: Publish
+        shell: pwsh
+        env:
+          CHOCO_SECRET: ${{ secrets.CHOCO_SECRET }}
+        run: choco push --source "'https://push.chocolatey.org/'" --api-key="'$env:CHOCO_SECRET'" --whatif
