@@ -9,14 +9,10 @@ on:
     - main
 
 jobs:
-  # This workflow contains the jobs to update and push the package
   build:
-    # run on ubuntu-latest with powershell
     runs-on: windows-latest
 
-    # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      # Checks-out your repository under $GITHUB_WORKSPACE, so the job can access it
       - uses: actions/checkout@v2
       
       - name: Pack

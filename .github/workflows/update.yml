@@ -11,14 +11,10 @@ on:
   workflow_dispatch:
 
 jobs:
-  # This workflow contains the jobs to update and push the package
   update:
-    # run on ubuntu-latest with powershell
     runs-on: windows-latest
 
-    # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      # Checks-out your repository under $GITHUB_WORKSPACE, so the job can access it
       - uses: actions/checkout@v2
 
       - name: install automatic updater
@@ -32,7 +28,7 @@ jobs:
 
       - name: Git config
         run: |
-            git config --global user.name "Update Bot'
+            git config --global user.name 'Update Bot'
             git config --global user.email 'noreply@kluge.io'
 
       - name: parse version from xml
