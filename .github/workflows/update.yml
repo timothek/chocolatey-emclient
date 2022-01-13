@@ -12,7 +12,7 @@ on:
 
 jobs:
   # This workflow contains the jobs to update and push the package
-  build:
+  update:
     # run on ubuntu-latest with powershell
     runs-on: ubuntu-latest
 
@@ -20,6 +20,10 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so the job can access it
       - uses: actions/checkout@v2
+
+      - name: install automatic updater
+        run: Install-Module -Name AU -Force
+        shell: pwsh
       
       - name: run update script
         run: |
