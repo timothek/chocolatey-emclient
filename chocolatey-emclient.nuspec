@@ -28,7 +28,7 @@ You can easily import your data from most of the other e-mail clients. This incl
     <copyright>eM Client Inc.</copyright>
     <licenseUrl>https://www.emclient.com/pricing</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
-    <iconUrl>https://cdn.rawgit.com/timothek/chocolatey-emclient/master/icons/emclient.png</iconUrl>
+    <iconUrl>https://cdn.rawgit.com/timothek/chocolatey-emclient/main/icons/emclient.png</iconUrl>
     <releaseNotes>https://www.emclient.com/release-history</releaseNotes>
     <dependencies>
       <dependency id="kb2999226" version="1.0.20181019" />
