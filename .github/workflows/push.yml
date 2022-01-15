@@ -7,6 +7,12 @@ on:
   push:
     branches:
     - main
+    paths:
+    - 'chocolatey-emclient.nuspec'
+    - 'tools/chocolateyinstall.ps1'
+
+  # Allows to run this workflow manually from the Actions tab
+  workflow_dispatch:
 
 jobs:
   build:
