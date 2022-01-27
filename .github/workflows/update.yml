@@ -16,6 +16,8 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
+        with:
+          token: ${{ secrets.WORKFLOW_SECRET }}
 
       - name: Install automatic updater
         run: Install-Module -Name AU -Force
@@ -32,7 +34,5 @@ jobs:
             git config --global user.email 'noreply@kluge.io'
 
       - name: Git commit
-        env:
-          GITHUB_TOKEN: ${{ secrets.WORKFLOW_SECRET }}
         shell: bash
         run: if [[ `git status --porcelain` ]]; then git commit -am "Automatic Update"; git push; else echo "Keine Änderungen"; fi
