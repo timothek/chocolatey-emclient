@@ -32,5 +32,7 @@ jobs:
             git config --global user.email 'noreply@kluge.io'
 
       - name: Git commit
+        env:
+          GITHUB_TOKEN: ${{ secrets.WORKFLOW_SECRET }}
         shell: bash
         run: if [[ `git status --porcelain` ]]; then git commit -am "Automatic Update"; git push; else echo "Keine Änderungen"; fi
