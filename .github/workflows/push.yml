@@ -7,7 +7,6 @@ on:
   push:
     branches:
     - main
-    - dev
     paths:
     - 'chocolatey-emclient.nuspec'
     - 'tools/chocolateyinstall.ps1'
@@ -29,4 +28,4 @@ jobs:
         shell: pwsh
         env:
           CHOCO_SECRET: ${{ secrets.CHOCO_SECRET }}
-        run: echo "this works" # choco push --source "'https://push.chocolatey.org/'" --api-key="'$env:CHOCO_SECRET'"
+        run: choco push --source "'https://push.chocolatey.org/'" --api-key="'$env:CHOCO_SECRET'"
