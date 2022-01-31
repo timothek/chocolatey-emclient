@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/10/nuspec.xsd">
   <metadata>
     <id>em-client</id>
-    <version>9.0.599</version>
+    <version>9.0.846-beta</version>
     <title>eM Client (Install)</title>
     <authors>eM Client Inc.</authors>
     <owners>timothek</owners>
@@ -10,11 +10,12 @@
     <projectUrl>https://www.emclient.com/</projectUrl>
     <iconUrl>https://rawcdn.githack.com/timothek/chocolatey-emclient/867573e71b34aba16543e42979abed94bee16521/icons/emclient.png</iconUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
-    <description>eM Client is a full featured e-mail client with a modern and easy to use interface. eM Client also offers calendar, tasks, contacts and chat. eM Client has been fully optimized to run smoothly on Windows XP, Vista, 7, 8 and 10.
+    <description><![CDATA[eM Client is a full featured e-mail client with a modern and easy to use interface. eM Client also offers calendar, tasks, contacts and chat. eM Client has been fully optimized to run smoothly on Windows XP, Vista, 7, 8 and 10.
 	
 Synchronize your e-mails (IMAP/POP3) or even Calendars and Contacts with various servers and services. eM Client fully supports touch devices like touch-enabled laptops, tablets and hybrid devices. Use your email client easily in a modern way. Find any email, contact or attachment in seconds with eM Client's super-fast search.
 	
-You can easily import your data from most of the other e-mail clients. This includes Microsoft Outlook, Outlook Express, Windows Mail, Windows Live Mail, Thunderbird, The Bat and more.</description>
+You can easily import your data from most of the other e-mail clients. This includes Microsoft Outlook, Outlook Express, Windows Mail, Windows Live Mail, Thunderbird, The Bat and more.
+]]></description>
     <summary>eM Client is a full featured e-mail client with a modern and easy to use interface. eM Client also offers calendar, tasks, contacts and chat.</summary>
     <releaseNotes>https://www.emclient.com/release-history</releaseNotes>
     <copyright>eM Client Inc.</copyright>
