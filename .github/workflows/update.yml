@@ -25,7 +25,8 @@ jobs:
       
       - name: Run update script
         run: |
-          $package = .\em-client\update.ps1
+          cd em-client
+          $package = .\update.ps1
         shell: pwsh
 
       - name: Git config
