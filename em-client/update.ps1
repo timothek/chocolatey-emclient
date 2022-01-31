@@ -1,6 +1,6 @@
 import-module au
 
-$releases = 'https://www.emclient.com/release-history'
+$releases = 'https://www.emclient.com/release-history?os=win'
 
 function global:au_SearchReplace {
     @{
@@ -18,8 +18,9 @@ function global:au_GetLatest {
     $re      = 'setup.msi'
     $url     = $download_page.links | Where-Object href -match $re | Select-Object -First 1 -expand href
     $version = ($url -split "/" | Select-Object -Index 4).Substring(1)
-    $changelog =  $download_page.AllElements | Where-Object Class -eq "emc-typo--size-md" |
-        Select-Object -First 1 -ExpandProperty innerText
+
+    $htmlDom = $download_page.RawContent | ConvertFrom-Html
+    $changelog =  $htmlDom.SelectSingleNode('//*[@id="emcReleaseHistory"]/section/div/div[6]/p').InnerText
 
     # if the changelog contains the word "beta", add it as suffix to the version number
     if($changelog.ToLower().Contains('beta'.ToLower())) {

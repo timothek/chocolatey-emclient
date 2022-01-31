@@ -22,6 +22,10 @@ jobs:
       - name: Install automatic updater
         run: Install-Module -Name AU -Force
         shell: pwsh
+
+      - name: Install PowerHTML
+        run: Install-Module -Name PowerHTML -Force
+        shell: pwsh
       
       - name: Run update script
         run: |
