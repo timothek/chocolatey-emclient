@@ -31,4 +31,6 @@ jobs:
         shell: pwsh
         env:
           CHOCO_SECRET: ${{ secrets.CHOCO_SECRET }}
-        run: choco push --source "'https://push.chocolatey.org/'" --api-key="'$env:CHOCO_SECRET'"
+        run: |
+          cd em-client
+          choco push --source "'https://push.chocolatey.org/'" --api-key="'$env:CHOCO_SECRET'"
