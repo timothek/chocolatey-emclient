@@ -25,7 +25,7 @@ jobs:
       
       - name: Run update script
         run: |
-          $package = .\update.ps1
+          $package = .\em-client\update.ps1
         shell: pwsh
 
       - name: Git config
@@ -38,7 +38,7 @@ jobs:
         run: |
           $message = "Automatic Update to version " + $package.RemoteVersion
           if(git status --porcelain ) {
-              git commit -am $message --dry-run; git push --dry-run
+              git commit -am $message; git push
           } else {
               Write-Host "no changes"
           }
