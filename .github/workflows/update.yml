@@ -25,7 +25,7 @@ jobs:
       
       - name: Run update script
         run: |
-          ./update.ps1
+          $package = .\update.ps1
         shell: pwsh
 
       - name: Git config
@@ -34,5 +34,11 @@ jobs:
             git config --global user.email 'noreply@kluge.io'
 
       - name: Git commit
-        shell: bash
-        run: if [[ `git status --porcelain` ]]; then git commit -am "Automatic Update"; git push; else echo "Keine Änderungen"; fi
+        shell: pwsh
+        run: |
+          $message = "Automatic Update to version " + $package.RemoteVersion
+          if(git status --porcelain ) {
+              git commit -am $message --dry-run; git push --dry-run
+          } else {
+              Write-Host "no changes"
+          }

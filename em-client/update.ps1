@@ -1,6 +1,6 @@
 import-module au
 
-$releases = 'http://www.emclient.com/release-history'
+$releases = 'https://www.emclient.com/release-history?os=win'
 
 function global:au_SearchReplace {
     @{
@@ -8,20 +8,29 @@ function global:au_SearchReplace {
             "(^[$]url\s*=\s*)('.*')"      = "`$1'$($Latest.URL32)'"
             "(^[$]checksum\s*=\s*)('.*')" = "`$1'$($Latest.Checksum32)'"
         }
-        'chocolatey-emclient.nuspec' = @{
-            "<id>.*</id>" = "<id>em-client</id>"
-            }
     }
 }
 
 function global:au_GetLatest {
     $download_page = Invoke-WebRequest -Uri $releases
 
+    # get all links from changelog website and split download url to get version number
     $re      = 'setup.msi'
     $url     = $download_page.links | Where-Object href -match $re | Select-Object -First 1 -expand href
     $version = ($url -split "/" | Select-Object -Index 4).Substring(1)
+    $changelog =  $download_page.AllElements | Where-Object Class -eq "emc-typo--size-md" |
+        Select-Object -First 1 -ExpandProperty innerText
+
+    # if the changelog contains the word "beta", add it as suffix to the version number
+    if($changelog.ToLower().Contains('beta'.ToLower())) {
+        $version = $version + '-' + 'beta'
+    }
 
     return @{ URL32 = $url; Version = $version; ChecksumType32 = 'sha256';}
 }
 
-update
+function global:au_AfterUpdate ($Package)  {
+    Set-DescriptionFromReadme $Package -SkipLast 0 -SkipFirst 2
+}
+
+Update-Package
