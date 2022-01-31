@@ -16,14 +16,21 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
+        with:
+          token: ${{ secrets.WORKFLOW_SECRET }}
 
       - name: Install automatic updater
         run: Install-Module -Name AU -Force
         shell: pwsh
+
+      - name: Install PowerHTML
+        run: Install-Module -Name PowerHTML -Force
+        shell: pwsh
       
       - name: Run update script
         run: |
-          ./update.ps1
+          cd em-client
+          $package = .\update.ps1
         shell: pwsh
 
       - name: Git config
@@ -32,5 +39,11 @@ jobs:
             git config --global user.email 'noreply@kluge.io'
 
       - name: Git commit
-        shell: bash
-        run: if [[ `git status --porcelain` ]]; then git commit -am "Automatic Update"; git push; else echo "Keine Änderungen"; fi
+        shell: pwsh
+        run: |
+          $message = "Automatic Update to version " + $package.RemoteVersion
+          if(git status --porcelain ) {
+              git commit -am $message; git push
+          } else {
+              Write-Host "no changes"
+          }
