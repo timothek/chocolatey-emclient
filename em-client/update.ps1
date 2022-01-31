@@ -1,6 +1,6 @@
 import-module au
 
-$releases = 'https://www.emclient.com/release-history?os=win'
+$releases = 'https://www.emclient.com/release-history'
 
 function global:au_SearchReplace {
     @{
