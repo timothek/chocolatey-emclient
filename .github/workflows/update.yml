@@ -20,7 +20,7 @@ jobs:
           token: ${{ secrets.WORKFLOW_SECRET }}
 
       - name: Install automatic updater
-        run: Install-Module -Name AU -Force
+        run: Install-Module -Name chocolatey-au -Force
         shell: pwsh
 
       - name: Install PowerHTML
